@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "360429105028",
+    "firebase_url": "https://tappy-6832d.firebaseio.com",
+    "project_id": "tappy-6832d",
+    "storage_bucket": "tappy-6832d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360429105028:android:f8deb0bef6150d44",
+        "android_client_info": {
+          "package_name": "com.example.kasperkofoed.tappy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360429105028-sbt8e3dlbsijbqh321ml40k537tlsghk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHP16oBoQPxtiRAlkq73DuzfM18_YhZAk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@color/dark_grey"
+    tools:context=".AddReservationActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#fefefe"/>
+
+    <TextView
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Reservation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:id="@+id/tW1"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/tW1"
+        android:id="@+id/addReservation_userId_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/reservation_userid"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:hint="User ID"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/addReservation_userId_edittext"
+        android:id="@+id/addReservation_roomId_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/reservation_roomid"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:hint="Room ID"
+        android:inputType="number" />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/addReservation_roomId_edittext"
+        android:id="@+id/addReservation_fromTime_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/reservation_fromtime"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:hint="From [Select Date and Time]"
+        android:editable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/addReservation_fromTime_edittext"
+        android:id="@+id/addReservation_toTime_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/reservation_totime"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:hint="To [Select Date and Time]"
+        android:editable="false"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/addReservation_purpose_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addReservation_toTime_edittext"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:drawableStart="@drawable/reservation_purpose"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:hint="Purpose"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_below="@id/addReservation_purpose_edittext"
+        android:id="@+id/addReservation_message_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="end"
+            android:onClick="addReservationButtonClicked"
+            android:background="#818286"
+            android:text="Add Reservation"
+            android:textColor="#ffff"  />
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="#818286"
+            android:text="Log Out"
+            android:layout_gravity="end"
+            android:textColor="#ffff" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

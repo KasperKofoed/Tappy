@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@color/dark_grey"
+    tools:context=".SingleReservationActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#fefefe"/>
+
+    <TextView
+        android:layout_below="@id/banner"
+        android:id="@+id/banner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/reservation_reservationid"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:layout_below="@id/banner2"
+        android:id="@+id/singleReservation_reservationId_textview"
+        android:text="Reservation ID"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/reservation_userid2"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:layout_below="@id/singleReservation_reservationId_textview"
+        android:id="@+id/singleReservation_userId_textview"
+        android:text="User ID"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_below="@id/singleReservation_userId_textview"
+        android:id="@+id/singleReservation_purpose_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:drawableStart="@drawable/reservation_purpose2"
+        android:drawablePadding="10dp"
+        android:background="@drawable/reservation_edit_text_background"
+        android:hint="Purpose"
+        android:textSize="25sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="end"
+            android:onClick="deleteReservationButtonClicked"
+            android:background="#818286"
+            android:text="Delete reservation"
+            android:textColor="#ffff"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="#818286"
+            android:text="Log Out"
+            android:onClick="deleteReservationButtonClicked"
+            android:layout_gravity="end"
+            android:textColor="#ffff" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

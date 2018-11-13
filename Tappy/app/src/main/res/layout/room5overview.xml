@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@color/dark_grey"
+    tools:context=".Room2Overview">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#fefefe"/>
+
+    <TextView
+        android:id="@+id/tW1"
+        android:textSize="20sp"
+        android:textColor="#fefefe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservations"
+        android:textAllCaps="false"
+        android:layout_below="@id/banner"/>
+
+    <TextView
+        android:id="@+id/tW2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tW1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Overview of bookings on room 5:"
+        android:textAllCaps="false"
+        android:textColor="#fefefe"
+        android:textSize="15sp" />
+
+
+    <ListView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/tW2"
+        android:layout_above="@id/lL1"
+        android:id="@+id/main_listView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/lL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="#818286"
+            android:text="Log Out"
+            android:layout_gravity="end"
+            android:textColor="#ffff" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
